@@ -1,0 +1,7 @@
+SELECT fin.alias
+FROM ENCNTR_ALIAS fin
+PLAN fin WHERE fin.encntr_alias_type_cd = 1077 ;FIN
+	AND fin.active_ind = 1
+	AND fin.end_effective_dt_tm > SYSDATE
+	
+	/* JOIN on encntr_id */
